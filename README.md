@@ -12,3 +12,6 @@ HOW TO INSTALL:
 4. Click "Open Themes Folder"
 5. Drop obscura.theme.css into the folder
 6. Ctrl-R to reload Discord
+
+------------------------
+Last updated for Discord update: 21. December 2017

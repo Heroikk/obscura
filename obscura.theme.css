@@ -67,7 +67,15 @@
 
 .avatarDefault-35WC3R, .avatarSpeaking-1wJCNq {
     border-radius: 3px;
-    box-shadow: 0 0 0 0 var(--accent), inset 0 0 0 0 #2f3136;
+   
+}
+
+.avatarSpeaking-1wJCNq{
+    box-shadow: 0 0 0 2px var(--accent), inset 0 0 0 1.5px #2f3136;
+}
+
+.prioritySpeaking-3pMeFb {
+    background-color: var(--accent) !important;
 }
 
 .theme-dark .inner-zqa7da {
@@ -110,10 +118,6 @@
     border-radius: 2px !important
 }
 
-.theme-dark .title-3qD0b-, .container-2Rl01u{
-    border-bottom: 4px  solid var(--accent);
-}
-
 .guilds-1q_RqH {
     padding-top: 0;
     padding-left: 0;
@@ -124,6 +128,19 @@
     border-radius: 0px !important;
     height: 48px;
     width: 70px;
+}
+
+.guild-1EfMGQ:first-of-type div {
+    transition: background-color .2s;
+}
+
+.guild-1EfMGQ:first-of-type.selected-ML3OIq div {
+    background-color: var(--accent) !important;
+}
+
+.guild-1EfMGQ:first-of-type:hover div {
+        background-color: var(--accent) !important;
+
 }
 
 .guild-1EfMGQ+.guild-1EfMGQ:nth-child(2) {
@@ -152,6 +169,14 @@
     padding-left: 10px;
     height: 48px;
     background-color: var(--black) !important;
+}
+
+.guild-1EfMGQ:first-of-type .guildInner-3DSoA4 a {
+    height: 48px;
+}
+
+.guild-1EfMGQ:first-of-type .guildInner-3DSoA4 a:hover, .guild-1EfMGQ:first-of-type .guildInner-3DSoA4:hover{
+    height: 48px !important;
 }
 
 .guild-1EfMGQ {
@@ -211,10 +236,32 @@ svg[name*="Nitro"] path{
     background: rgba(255,255,255,.05) !important;
 }
 
-.guild-1EfMGQ:first-child {
-    border-bottom: 4px solid var(--accent);
+
+
+.guild-1EfMGQ:not(:first-child), .guild-1EfMGQ:not(:first-child) .guildInner-3DSoA4 a {
+    height: 30px;
+    transition: height .25s ease-out;
 }
 
+.guild-1EfMGQ:not(:first-child) .guildInner-3DSoA4 a div{
+    background-position: center;
+}
+
+.guild-1EfMGQ:hover {
+    height: 50px;
+}
+
+.guild-1EfMGQ .guildInner-3DSoA4 a:hover {
+    height: 50px;
+}
+
+.selected-ML3OIq::before {
+    background: var(--laccent);
+}
+
+.selected-ML3OIq, .selected-ML3OIq a{
+    height: 50px !important;
+}
 .headerBar-cxbhPD,
 .friends-table,
 #friends {
@@ -747,13 +794,10 @@ header {
     bottom: 0px;
 }
 
-.private-channels .search-bar {
-    border-bottom: 4px solid var(--accent);
-}
+
 
 .theme-dark .headerBar-UHpsPw {
     background-color: var(--lblack);
-    border-bottom: 4px solid var(--accent);
 }
 
 .form.deprecated .control-group {
